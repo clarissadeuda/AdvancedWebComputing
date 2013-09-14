@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Team Chimay</title>
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('#tabs').tabs();
+		});
+	</script>
+	
+</head>
+<body>
+	<div id="tabs" class="navbar navbar-static-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-form" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="module8.html">Team Chimay</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav ">
+					<li><a href="#search">Search</a></li>
+					<li><a href="#box" id="boxbtn">Box Office</a></li>
+					<li><a href="#theaters" id="intheabtn">In Theaters</a></li>
+					<li><a href="#upcoming" id="upcombtn">Upcoming</a></li>
+					<li><a href="#opening" id="openbtn">Opening</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="search" class="container btn-danger" >
+			<div class="row">
+				<div id="searchmovie" class="col-md-4"></div>
+				<div id="searchresult" class="col-md-8"></div>
+			</div>
+			<input type="text" id="formovie" placeholder = "Search Movies here" />
+			<div class="container" id="search_holder">
+				<ul class="list-inline list-unstyled"></ul>
+			</div>
+		</div>
+		<div id="box" class="container btn-danger">
+			<ul class="list-inline list-unstyled"></ul>
+		</div>
+		<div id="theaters" class="container btn-danger">
+			<ul class="list-inline list-unstyled"></ul>
+		</div>
+		<div id="upcoming" class="container btn-danger">
+			<ul class="list-inline list-unstyled"></ul>
+		</div>
+		<div id="opening" class="container btn-danger">
+			<ul class="list-inline list-unstyled"></ul>
+		</div>
+	</div>
+		<script type="text/x-handlebars-template" id="search-item">
+			<li style="width: 30%; height:30%;">
+				<div id="resulta" class="row">
+					<div id="wala" class="col-lg-12 col-sm-12">
+						<div class="img-thumbnail">
+							<img src="{{posters.profile}}" alt="..." />
+							<h4><p>{{title}}</p></h4>
+							<p>{{synopsis}}</p>
+							<p>{{year}}</p>
+						</div>		
+					</div>
+				</div>
+			</li>
+		</script>
+	 <footer>
+        <center><p >&copy; Movies  <br />Team Chimay <br />2013</p></center>
+      </footer>
+		<script type="text/javascript" src="js/search.js"></script>
+		<script type="text/javascript" src="js/handlebars.js"></script>
+	
+
+</body>
+</html>

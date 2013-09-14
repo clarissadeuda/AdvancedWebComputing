@@ -40,6 +40,10 @@ audio:not([controls]) {
   display: none;
 }
 
+p{
+	color: black;
+}
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -2164,6 +2168,7 @@ fieldset[disabled] .btn-warning.active {
   color: #ffffff;
   background-color: #d9534f;
   border-color: #d43f3a;
+  padding:15px;
 }
 
 .btn-danger:hover,
@@ -2246,6 +2251,7 @@ fieldset[disabled] .btn-success.active {
   color: #ffffff;
   background-color: #5bc0de;
   border-color: #46b8da;
+  padding:15px;
 }
 
 .btn-info:hover,
@@ -6802,4 +6808,7 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+.white-text{
+	color: #FFFFFF !important;
 }
